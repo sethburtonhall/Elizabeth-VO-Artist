@@ -1,0 +1,836 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*
+******************************
+* =reset
+******************************
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
+
+
+/*
+******************************
+* =HTML5 display definitions
+******************************
+*/
+
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+
+audio:not([controls]) {
+    display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+
+[hidden] {
+    display: none;
+}
+
+
+/*
+******************************
+* =base
+******************************
+*/
+
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Keeps page centred in all browsers regardless of content height
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    overflow-y: scroll; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+    -ms-text-size-adjust: 100%; /* 3 */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+
+body {
+    margin: 0;
+}
+
+/* 
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+
+/*
+******************************
+* =links
+******************************
+*/
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+
+/*
+******************************
+* =typography
+******************************
+*/
+
+/*
+ * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+
+b, 
+strong { 
+    font-weight: bold; 
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+
+/* 1 */
+
+q {
+    quotes: none;
+}
+
+/* 2 */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+small {
+    font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+
+/*
+******************************
+* =lists
+******************************
+*/
+
+ul,
+ol {
+    margin-left: 0;
+    padding: 0 0 0 40px;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+
+/*
+******************************
+* =embedded content
+******************************
+*/
+
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9 
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+/*
+************************************************************************************************************************
+* =! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com  
+************************************************************************************************************************
+*/
+
+.container {
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.row {
+width: 100%;
+max-width: 1140px;
+min-width: 755px;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+margin-right: 3.8%;
+float: left;
+min-height: 1px;
+}
+
+.row .onecol {
+width: 4.85%;
+}
+
+.row .twocol {
+width: 13.45%;
+}
+
+.row .threecol {
+width: 22.05%;
+}
+
+.row .fourcol {
+width: 30.75%;
+}
+
+.row .fivecol {
+width: 39.45%;
+}
+
+.row .sixcol {
+width: 48%;
+}
+
+.row .sevencol {
+width: 56.75%;
+}
+
+.row .eightcol {
+width: 65.4%;
+}
+
+.row .ninecol {
+width: 74.05%;
+}
+
+.row .tencol {
+width: 82.7%;
+}
+
+.row .elevencol {
+width: 91.35%;
+}
+
+.row .twelvecol {
+width: 100%;
+float: left;
+}
+
+.last {
+margin-right: 0px;
+}
+
+img, object, embed {
+max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+
+
+/*
+******************************
+* =@font-face
+******************************
+*/
+
+/*
+******************************
+* =typography
+******************************
+*/
+
+
+/*
+******************************
+* =general styles
+******************************
+*/
+.top {
+  background: #84AA82;
+  height:30px;
+  margin:-15px 0 20px 0;
+}
+
+.bottom {
+  background: #84AA82;
+  height:15px;
+}
+
+body {
+  background: #FFFAE9;
+  color: #111;
+}
+
+h2 {
+  font-family: 'Rochester', cursive;
+  font-size:2.4em;
+  padding: 0 0 10px 10px;
+  border-bottom: 1px dotted #333;
+/*  text-shadow: #333 1px 1px 0px;*/
+  letter-spacing: .1em;
+}
+
+p {
+  font-family: 'Arvo', serif;
+  font-size:1em;
+  line-height:20px;
+  letter-spacing:.06em;
+}
+
+a {
+  color: #408FD9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2676c0;
+}
+/*
+******************************
+* =header
+******************************
+*/
+
+
+/*
+******************************
+* =aside
+******************************
+*/
+
+.centerlogo {
+  padding-top:0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centerphoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+aside p {
+  padding: 0px 20px 10px 0;
+}
+
+.logo {
+/*  background: url(../img/logo.png) no-repeat;*/
+  height:300px;
+  padding: 0px;
+  padding-bottom: 10%;
+
+}
+
+.logo span {
+  position: absolute;
+  top: 77px;
+  font-size: 2em;
+  left: 415px;
+  text-decoration: none !important;
+}
+
+.about, .contact, .testimonial {
+  margin-bottom:40px;
+}
+
+.about p {
+  padding-top:20px;
+}
+
+.phone {
+  padding-top:20px;
+}
+
+.email {
+}
+
+blockquote {
+  font-style: italic;
+  margin: 20px 0px;
+}
+
+.cite {
+  float: right;
+  font-size: .8em;
+  padding-bottom:0px;
+}
+
+.cite2{
+  float: right;
+  font-size: .8em;
+
+}
+
+aside img {
+  padding-top: 20px;
+}
+/*
+******************************
+* =main
+******************************
+*/
+
+.wrap {
+  border-left: 1px dotted #333;
+  height: 100%;
+  padding-left: 3.8%;
+}
+
+ .header{
+  display: inline-block;
+  width:100%;
+  font-family: 'Rammetto One', cursive;
+  font-size: 4em;
+  color: #84AA82;
+  text-shadow: 
+  #444 1px 1px 0px,
+  #444 2px 2px 0px,
+  #444 3px 3px 0px,
+  #444 4px 4px 0px,
+  #444 5px 5px 0px;
+  text-transform: uppercase;
+  letter-spacing: .6em;
+  margin: 20px 0 36px;
+/*  text-align: center;*/
+  border-bottom: none;
+
+}
+
+.char1,.char2,.char3,.char4,.char5,.char6,.char7,.char8 {
+  -webkit-transition: all .3s;
+}
+
+.char1:hover,
+.char2:hover,
+.char3:hover,
+.char4:hover,
+.char5:hover,
+.char6:hover,
+.char7:hover,
+.char8:hover {
+  color: #b6d6f3;
+  text-shadow:
+    #84AA82 1px 1px 0px,
+    #84AA82 2px 2px 0px,
+    #84AA82 3px 3px 0px,
+    #84AA82 4px 4px 0px,
+    #84AA82 5px 5px 0px;
+}
+
+.main {
+ height:1077px;
+}
+
+
+.disclaimer {
+  font-family: 'Arvo', serif !important;
+  font-size:.8em;
+  font-style: italic;
+  line-height:20px;
+  letter-spacing:.06em;
+  text-align: center;
+  margin:20px 0;
+  border-bottom: none;
+}
+
+.main p {
+  padding: 20px 0; 
+  
+}
+
+.example1, .example2, .example3, .example4 {
+  margin-bottom:50px;
+  
+}
+
+.example1 {
+  background-color: ;
+}
+
+.example2 {
+  background-color: ;
+}
+
+.example3 {
+  background-color: ;
+}
+
+.example4 {
+  background-color: ;
+}
+
+.player {
+  width: 100%;
+}
+
+.download {
+  font-size: .9em;
+  padding-top: 0px !important;
+}
+
+/*
+******************************
+* =footer
+******************************
+*/
+
+footer {
+  height: 30px;
+  padding-top: 20px;
+  text-align:center;
+  font-size: .9em;
+}
+
+
+/*
+******************************
+* =smaller screens
+******************************
+*/
+
+@media only screen and (max-width: 1023px) {
+
+  body {
+  font-size: 0.8em;
+  line-height: 1.5em;
+  }
+  
+.ninecol.last.main {
+margin: 0 -20px;
+}
+
+  }
+
+
+/*
+******************************
+* =mobile
+******************************
+*/
+
+@media handheld, only screen and (max-width: 767px) {
+
+  body {
+  font-size: 16px;
+  -webkit-text-size-adjust: none;
+  }
+  
+  .row, body, .container {
+  width: 100%;
+  min-width: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  }
+  
+  .row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+  width: auto;
+  float: none;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+.header {
+  margin: 40px 0;
+}
+
+.disclaimer {
+   display: none;
+}
+
+.wrap {
+  border-left: none;
+  padding-left: 0px !important;
+}
+
+.six, .twelve{
+  padding: 0px 0px !important;
+}
+
+footer {
+  height: 30px;
+  padding-top: 0px;
+  text-align:center;
+  font-size: .5em;
+}
+
+}
+
+
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+.logo {
+  background: url(../img/logo@2x.png) no-repeat;
+
+}*/
+
+}
+
+/* ======================================= */
+/* ! Layout for mobile version [portrait]  */
+/* ======================================= */
+
+
+/*@media handheld, only screen and (max-width : 320px) {
+
+.disclaimer {
+   display: none;
+}
+
+.wrap {
+  border-left: none;
+}
+
+}*/
+
+
+/* ======================================= */
+/* ! Layout for mobile version [landscape]  */
+/* ======================================= */
+
+
+/*@media only screen and (min-device-width: 321px) and (max-device-width : 480px){
+
+.disclaimer {
+   display: none;
+}
+
+.wrap {
+  border-left: none;
+}
+
+}*/
+
+/* ========================================== */
+/* ! Layout for iPad [portrait]   */
+/* ========================================== */
+
+/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+
+
+}*/
+
+/* ========================================== */
+/* ! Layout for iPad [landscape]   */
+/* ========================================== */
+
+/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+
+
+
+
+}*/

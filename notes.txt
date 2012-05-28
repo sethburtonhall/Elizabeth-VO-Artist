@@ -1,0 +1,39 @@
+Google voice mail message
+
+buy domain
+
+Google Analytics
+
+Sarah and Sing Code
+
+					<div class="sixcol six">
+						<article class="example3">
+							<h2>Short Story</h2>
+							<p>Sarah and Sing: a short story by Les Butchart of <a href="http://www.fugitivepoetspress.com/" title="Fugitve Poets Press">Fugitive Poets Press</a></p>
+							<audio class="player" controls="controls">
+									<source src="audio/sarahsing.mp3" type="audio/mpeg"/> 
+				 					<source src="audio/sarahsing.ogg" type="audio/ogg"/> 
+								 <!-- Windows Media Player class id to enable native streaming on IE 7 and above. IE 6 and below will go straight to flash player -->
+								 <!--[if gt IE 6]>
+								 <object classid="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" width="320" height="45"><!
+								 [endif]-->
+								 <!--[if !IE]><!-->
+								 	<object type="audio/mpeg" data="audio/sarahsing.mp3">
+								 <!--<![endif]-->
+								 <!-- Windows Media Player controls -->
+								 	<param name="url" value="audio/sarahsing.mp3" />
+								 	<param name="autostart" value="false" />
+								 	<param name="uiMode" value="full" />
+								 <!-- Flash fallback -->
+								 	<object height="24" width="320" type="application/x-shockwave-flash" data="/flash/player.swf" id="audioplayer">
+								 	<param name="movie" value="/flash/player.swf" />
+								 	<param name="FlashVars" value="playerID=audioplayer&amp;soundFile=audio/sarahsing.mp3" />
+								 <!-- Fallback image when nothing works -->
+								 	<img class src="__POSTER__.JPG" width="128" height="135" alt="Title" title="No audio playback capabilities, please download the audio below" />
+								 	</object><!--[if gt IE 6]><!-->
+								 	</object><!--<![endif]-->
+								</audio> 
+								 	<!-- Download links outside the audio tag -->
+								 	<p><a class="download" href="audio/sarahsing.mp3">Download</a></p>
+						</article>
+					</div>
